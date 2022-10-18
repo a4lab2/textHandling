@@ -20,8 +20,8 @@ func main() {
 	v := &Servers{
 		Version: "1.0",
 	}
-	v.Svs = append(v.Svs, server{"Shanghai_VPN", "127.0.0.1"})
-	v.Svs = append(v.Svs, server{"Beijing_VPN", "127.0.0.2"})
+	v.Svs = append(v.Svs, server{"zone_A", "127.0.0.1"})
+	v.Svs = append(v.Svs, server{"zone_B", "127.0.0.2"})
 	o, err := xml.MarshalIndent(v, " ", "  ")
 	if err != nil {
 		fmt.Printf("error:%v\n", err)
